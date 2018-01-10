@@ -9,11 +9,16 @@ URL: https://github.com/geobra/harbour-shmoose
 Source0: %{name}-%{version}.tar.bz2
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
-BuildRequires:	pkgconfig(sailfishapp) >= 1.0.2
+BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Core)
+BuildRequires:  pkgconfig(Qt5Xml)
+BuildRequires:  pkgconfig(Qt5Concurrent)
 BuildRequires:  openssl-devel
+BuildRequires:  swiften-devel
+BuildRequires:  boost-devel
+BuildRequires:  libiphb-devel
 
 %description
 XMPP Client for Sailfish OS

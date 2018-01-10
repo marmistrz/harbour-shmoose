@@ -13,6 +13,7 @@ SWIFTLIB = $$system("swiften-config --libs")
 TEMPLATE = app
 QT += qml quick core sql xml concurrent
 
+INCLUDEPATH += /usr/include/Swiften/3rdParty/Boost/src
 INCLUDEPATH += $${SWIFT3PATH}/3rdParty/Boost/src
 INCLUDEPATH += $${SWIFT3PATH}/
 INCLUDEPATH += source
