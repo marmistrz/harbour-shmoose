@@ -41,8 +41,8 @@ contains(DEFINES, SFOS) {
     LIBS += -liphb
 }
 
-LIBS += -lgcrypt
 LIBS += $$_PRO_FILE_PWD_/lib/axc/build/libaxc.a
+LIBS += -lgcrypt
 LIBS += $$_PRO_FILE_PWD_/lib/axc/lib/libsignal-protocol-c/build/src/libsignal-protocol-c.a
 LIBS += $$_PRO_FILE_PWD_/lib/libomemo/build/libomemo-conversations.a
 
