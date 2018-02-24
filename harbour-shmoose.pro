@@ -26,6 +26,8 @@ INCLUDEPATH += source/xep/xmppPing
 INCLUDEPATH += source/xep/chatMarkers
 INCLUDEPATH += source/xep/omemo
 
+LIBS += -lboost_signals
+
 QMAKE_CXXFLAGS += $${SWIFTCXX} -std=c++11
 QMAKE_CXXFLAGS += $$system("pkg-config --cflags glib-2.0")
 

@@ -13,7 +13,7 @@ public:
 
 private:
     virtual void handleStreamStart(const Swift::ProtocolHeader&);
-    virtual void handleElement(boost::shared_ptr<Swift::ToplevelElement> element);
+    virtual void handleElement(std::shared_ptr<Swift::ToplevelElement> element);
     virtual void handleStreamEnd();
 
     Swift::Message* msg_;

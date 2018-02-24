@@ -21,7 +21,7 @@ void XMPPMessageParserClient::handleStreamStart(const Swift::ProtocolHeader&)
     //std::cout << "-> Stream start" << std::endl;
 }
 
-void XMPPMessageParserClient::handleElement(boost::shared_ptr<Swift::ToplevelElement> element)
+void XMPPMessageParserClient::handleElement(std::shared_ptr<Swift::ToplevelElement> element)
 {
     std::string elementName = typeid(*element.get()).name();
     if (elementName.find("Message") != std::string::npos)
